@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//Array(배열)
+	var arr1 = [];
+	
+	arr1[0] = "지웅";
+	arr1[1] = "광민";
+	arr1[2] = "아름";
+	
+	var arr2 = new Array(3);
+	
+	arr2[0] = "대현";
+	arr2[1] = "수진";
+	arr2[2] = "어진";
+	
+	var arr3 = new Array("해림", "진원", "철빈");
+	
+	//배열 => 문자열
+	document.write(arr1.toString() + "<br>");
+	document.write(arr1.join(" ") + "<br>");//사용자정의 => 기준
+	
+	//배열 추가
+	var arr4 = arr3.concat(arr2);
+	document.write(arr4.toString() + "<br>");
+	//해림,진원,철빈,대현,수진,어진
+	
+	//배열 일부 추출(slice(시작인덱스, 마지막 인덱스))
+	var arr5 = arr4.slice(1, 5);
+	document.write(arr5.toString() + "<br>");
+	
+	//배열 부분 삭제(splice(인덱스, 갯수))
+	//var arr6 = arr4.splice(1, 3);
+	//document.write(arr4.toString() + "<br>");//삭제하고 남은 대상
+	//document.write(arr6.toString() + "<br>");//삭제된 대상
+	
+	//배열 정렬
+	var arr7 = arr4.sort();//오름차순
+	document.write(arr7.toString() + "<br>");
+	
+	//ES6 Array
+	
+	//Array.of() : 전달받은 모든 인수로 배열을 생성
+	var arr8 = Array.of(1,2,3,4,5);
+	document.write(arr8.toString() + "<br>");
+	
+	//Array.find() : 함수를 충족하는 배열의 첫 번째 요소를 반환 or 없으면 => undefined
+	var arr9 = [1,2,3,4,5];
+	var re = arr9.find(e => e > 3);
+	document.write(re + "<br>");
+	
+	//Array.some() => 조건에 맞는 것이 하나라도 있으면 : true
+	//Array.every() => 모든 조건이 충족되면 : true
+	var arr10 = [1,2,4,6,7,8,9];
+	var re2 = arr10.some(e => e > 2);
+	document.write(re2 + "<br>");
+	
+	var re3 = arr10.every(e => e > 2);
+	document.write(re3 + "<br>");
+	
+	//...pre  => spread operator => 배열복사
+	var arr11 = ['apple', 'orange', 100];
+	var re4 = [...arr11];
+	document.write(re4 + "<br>");
+	
+	var arr12 = ['apple', 'orange', 100, null];
+	var re5 = [1, 2, 3, ...arr12 ,4];
+	document.write(re5 + "<br>");
+	
+	var arr13 = [100, 200, 300];
+	
+	function sum(a, b, c){
+		return a + b + c;
+	}
+	
+	document.write(sum(...arr13)+ "<br>");
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+

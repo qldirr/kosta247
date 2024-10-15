@@ -1,0 +1,122 @@
+h1{
+	border-bottom: solid orange;
+}
+div#area{
+	width : 700px;
+	height : 500px;
+}
+input#count{
+	font-size : 18px;
+	text-align : center;
+	width : 50px;
+	height: 30px;
+	
+}
+input#ball1,#ball2,#ball3{
+	width : 50px;
+	height: 30px;	
+}
+input#ball1{
+	position : absolute;
+	top : 130px;
+	left :10px;
+	text-align: center;
+	font-size: 22px;
+}
+input#ball2{
+	position : absolute;
+	top : 130px;
+	left :70px;
+	text-align: center;
+	font-size: 22px;
+}
+input#ball3{
+	position : absolute;
+	top : 130px;
+	left :130px;
+	text-align: center;
+	font-size: 22px;
+}
+button {
+	width: 60px;
+	height: 60px;
+	font-size: 20px;
+}
+
+button.clear {
+	position : absolute;
+	top : 130px;
+	left : 190px;
+	width: 60px;
+	height: 30px;
+}
+
+button#reset {
+	position : absolute;
+	top : 130px;
+	left : 260px;
+	width: 60px;
+	height: 30px;
+}
+
+button.btn1 {
+	position: absolute;
+	top: 170px;
+	left: 330px;
+}
+
+button.btn2 {
+	position: absolute;
+	top: 170px;
+	left: 400px;
+}
+
+button.btn3 {
+	position: absolute;
+	top: 170px;
+	left: 470px;
+}
+
+button.btn4 {
+	position: absolute;
+	top: 250px;
+	left: 330px;
+}
+
+button.btn5 {
+	position: absolute;
+	top: 250px;
+	left: 400px;
+}
+
+button.btn6 {
+	position: absolute;
+	top: 250px;
+	left: 470px;
+}
+
+button.btn7 {
+	position: absolute;
+	top: 330px;
+	left: 330px;
+}
+button.btn8 {
+	position: absolute;
+	top: 330px;
+	left: 400px;
+}
+button.btn9 {
+	position: absolute;
+	top: 330px;
+	left: 470px;
+}
+button.bt1:active{
+	position:absolute;
+	top:150px;
+}
+textarea {
+	position: absolute;
+	top: 170px;
+	font-family: "맑은고딕";
+	font-size: 14px;
+}

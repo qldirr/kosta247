@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+
+	<style>
+		.tab-menu {
+			list-style: none;
+			height:80px;
+		}
+		.tab-menu li {
+			width:99px;
+			height:40px;
+			background-position-y:0;
+			text-indent: -1000px;
+			overflow: hidden;
+			display: inline-block;
+			float:left;
+		}
+		.tab-menu li:hover {
+			background-position-y: -40px;
+		}
+		.tab-menu li.select {
+			background-position-y: -80px;
+			height:80px;
+		}
+		.tab-menu li.menuitem1 {
+			background-image: url(images/newbtn.bar.1.png);
+		}
+		.tab-menu li.menuitem2 {
+			background-image: url(images/newbtn.bar.2.png);
+		}
+		.tab-menu li.menuitem3 {
+			background-image: url(images/newbtn.bar.3.png);
+		}
+		.tab-menu li.menuitem4 {
+			background-image: url(images/newbtn.bar.4.png);
+		}
+		.tab-menu li.menuitem5 {
+			background-image: url(images/newbtn.bar.5.png);
+		}
+		.tab-menu li.menuitem6 {
+			background-image: url(images/newbtn.bar.6.png);
+		}
+
+	</style>
+	 
+    <script src="../libs/jquery-1.11.0.min.js"></script>
+	<script>
+
+		/*
+		예제01: 예제: 함수 단위 코딩으로 만들어진 탭메뉴를 만들어 보세요. */
+		 
+		 var $tabMenu = null;
+		 var $menuItems = null;
+		 var $selectedMenuItem = null;
+		 
+		 $(function(){
+			 init();
+			 initEvent();
+		 });
+		 
+		 //요소를 초기화 함수
+		 function init(){
+			$tabMenu = $('#tabMenu1');
+			$menuItems = $tabMenu.find('li');
+		}
+		 
+		 //이벤트를 등록 함수
+		 function initEvent(){
+			 $menuItems.on('click', function(){
+				 selectedItem($(this));
+			 });
+		 }
+		 
+		 //이벤트 핸들러 함수
+		 function selectedItem($menuItem){
+			 if($selectedMenuItem){
+				 $selectedMenuItem.removeClass('select');
+			 }
+			 $selectedMenuItem = $menuItem;
+			 $selectedMenuItem.addClass('select');			 
+		 }
+		
+
+	</script>
+</head>
+	
+	<body>
+		<p>첫 번째 탭메뉴</p>
+		<ul class="tab-menu" id="tabMenu1">
+			<li class="menuitem1">google</li>
+			<li class="menuitem2">facebook</li>
+			<li class="menuitem3">pinterest</li>
+			<li class="menuitem4">twitter</li>
+			<li class="menuitem5">airbnb</li>
+			<li class="menuitem6">path</li>
+		</ul>
+
+	</body>
+</html>

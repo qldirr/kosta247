@@ -1,0 +1,61 @@
+@CHARSET "EUC-KR";
+
+
+/* ¼û±è ¿ä¼Ò */
+legend, #header h2, #slogan h2, #footer h2 {
+	position:absolute;
+	overflow:hidden;	
+	width:1px;
+	height:1px;
+	font-size:0;
+	line-height:0;
+}
+/* body ½ºÅ¸ÀÏ */
+body {
+	color:#000;
+	font-size:75%;
+	line-height:1.2;
+	font-family:"µ¸¿ò", Dotum, "±¼¸²", Gulim, Verdana, AppleGothic, sans-serif;
+	background: url(../images/common/bg_body.gif) repeat-x 0 0;
+}
+/* ¸µÅ© */
+a, a:link {
+	color:#4f4f4f;
+	text-decoration:none;
+} 
+a:visited {
+	color:#8a2e91;
+	text-decoration:none;
+}
+a:hover {
+	color:#f00;
+	text-decoration:underline;
+}
+a:focus {
+	color:#f00;
+	text-decoration:underline;
+}
+a:active {
+	color:#f00;
+	text-decoration:none;
+} 
+/* ÀÌ¹ÌÁö, Æû°ü·Ã ¿ä¼Ò */
+img {
+	vertical-align:top;
+}
+label, select, input, textarea {
+	vertical-align:middle;
+}
+/* -------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+

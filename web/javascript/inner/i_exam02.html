@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//이미지를 랜덤하게 출력하는 예제
+	//배열에 이미지 경로 추가 후 랜덤한 수를 입력 받아 해당 이미지를 출력
+	var arr = [];
+	
+	for(var i=0;i<7;i++){
+		arr[i] = "../images/pic" + (i+1) + ".jpg";
+	}	
+
+	window.onload = function(){
+		//0~6 난수를 발생
+		var n =  Math.floor(Math.random() * 7);
+		
+		var img = document.getElementById("img");
+		img.src = arr[n];
+	}
+	
+</script>
+</head>
+<body>
+	<img id="img" src="">
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

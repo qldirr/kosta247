@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript" src="httpRequest.js"></script>
+<script type="text/javascript">
+	
+	function startSuggest(){
+		var keyword = document.search.keyword.value;
+		var params = "keyword=" + encodeURIComponent(keyword);
+		sendRequest("suggest.jsp", params, displayResult, "POST");
+	}
+	
+	function displayResult(){
+		if(httpRequest.readyState == 4){
+			if(httpRequest.status == 200){
+				var html="";
+				var result = httpRequest.responseText;
+				var keywardList = result.split(',');
+				for(var i=0;i<keywardList.length;i++){
+					var str = keywardList[i].trim();
+					html += "<a href=javascript:select('"  + str + "')>" + str + "</a><br>";
+				}
+				
+				var suggestList = document.getElementById("suggestList");
+				suggestList.innerHTML = html;
+				show('suggest');
+			}
+		}
+	}
+	
+	function show(elementId){
+		var element = document.getElementById(elementId);
+		if(element){
+			element.style.display="";
+		}
+	}
+	
+	function select(selectKeyward){
+		document.search.keyword.value = selectKeyward;
+		hide('suggest');
+	}
+	
+	
+	function hide(elementId){
+		var element = document.getElementById(elementId);
+		if(element){
+			element.style.display="none";
+		}
+	}
+	
+</script>
+</head>
+<body>
+	<form name="search" onkeyup="startSuggest()">
+		<input type="text" name="keyword">
+		<input type="button" value="전송">
+	</form>
+	
+	<div id="suggest" style="position: absolute; left: 10px">
+		<div id="suggestList"></div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//자바스크립트 객체
+	//1. 내장객체 : 이미 생성된 객체
+	//   1) 코아객체 : string, number, math, calendar, Array
+	//   2) 브라우저객체 :  window, document, history, navigator 
+	//2. 사용자 정의 객체 : student, phoneInfo
+	
+	//객체를 사용 방법
+	// - 자바스크립트 객체는 동적으로 프로퍼티를 추가할 수 있다.
+	//1. Object 객체 이용 => 동적프로퍼티 추가/삭제 가능
+	var obj = new Object();
+	obj.name = "홍길동";
+	obj.age = 20;
+	
+	console.log("이름: " + obj.name);
+	console.log("나이: " + obj.age);
+	
+	//함수는 1급 객체이다.
+	function add(a, b){
+		var sum = a + b;
+		return sum;
+	}
+	
+	add.result = add(10, 20);
+	console.log("결과: " + add.result);
+	
+	//2. 리터럴형식 객체 사용 => 1개의 객체를 생성해서 사용하는 경우
+	var obj2 = {
+		name : "박길동",
+		age : 30,
+		display : function(){
+			console.log(this.name);
+		}
+	};
+	
+	obj2.display();
+	console.log(obj2.age);
+	console.log(obj2["age"]);
+	
+	//퀴즈> 리터럴 형식으로 빈객체를 생성 후
+	//		동적프로퍼티와 함수를 추가 후 호출하는 예제를 구현하시오.
+	var obj3 = {};
+	obj3.name = "이길동";
+	obj3.display = function(){
+		console.log(this.name);
+	}
+	
+	obj3.display();
+	
+	//객체 디스트럭처링 : 객체의 프로퍼티를 풀어서 별개의 변수에 저장하는 방식
+	var person = {
+		first : "홍",
+		last : "길동"
+	};
+	
+	var {first, last} = person;
+	console.log(first, last);
+	
+	//객체에 함수를 추가하는 방법
+	/* var person2 = {
+			name : "홍길동",
+			greet : function(){
+				console.log("Hello");
+			}
+	} */
+	
+	/* var person2 = {
+			name : "홍길동",
+			greet(){
+				console.log("Hello");
+			}
+	} */
+	
+	var person2 = {
+			name : "홍길동",
+			greet : () => console.log("Hello2")
+			
+	}
+	
+	person2.greet();
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

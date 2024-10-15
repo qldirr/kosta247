@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="httpRequest.js"></script>
+<script type="text/javascript">
+	window.onload = function() {
+		sendRequest("server.jsp", "", viewInfo, "GET");
+	}
+
+	function viewInfo() {
+		if (httpRequest.readyState == 4) {
+			if (httpRequest.status == 200) {
+				var result = eval("(" +httpRequest.responseText + ")");
+				
+				var html = "";
+				for (var i = 0; i < result.length; i++) {
+					 html += "<div>";
+				     html += "<h3>" + result[i].name + "</h3>";
+				     html += "<div>" + result[i].address + "</div>";
+				     html += "</div>";
+				}
+
+				var list = document.getElementById("list");
+				list.innerHTML = html; 
+			}
+		}
+	}
+</script>
+</head>
+<body>
+	<div id="list"></div>
+</body>
+</html>

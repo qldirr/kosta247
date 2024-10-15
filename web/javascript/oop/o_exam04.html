@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	function student(name, kor, eng, mat){
+		this.name = name;
+		this.kor = kor;
+		this.eng = eng;
+		this.mat = mat;
+	}
+	
+	/* student.prototype.getSum = function(){}
+	student.prototype.getAverage = function(){}
+	student.prototype.toString = function(){} */
+	
+	student.prototype = {
+			getSum : function(){
+				return this.kor + this.eng + this. mat;
+			},
+			getAverage : function(){
+				return this.getSum()/3;
+			},
+			toString : function(){
+				return this.name + "\t" + this.getSum() + "\t" + this.getAverage();
+			}
+	};
+	
+	var students = [];
+	students.push(new student("홍길동", 80, 90, 70)); //생성자 함수를 호출
+	students.push(new student("박길동", 40, 50, 80)); //생성자 함수를 호출
+	
+	for(var i in students){// for in : 인덱스값 리턴
+		document.write(students[i].toString() + "<br>");
+	}
+	
+	//과제> Rectangle 생성자함수를 만들고 사각형 넓이를 구하여 보자.(prototype : getArea())
+	//         생성자함수를 통해서 객체를 생성하고 해당 함수를 호출해서 사용해 보세요.
+	
+/* 	function Rectangle(width, height){
+		this.width = width;
+		this.height = height;
+	}
+	
+	Rectangle.prototype.getArea = function(){
+		return this.width * this.height;
+	}
+	
+	var rectangle = new Rectangle(5, 7);
+	console.log("넓이: " + rectangle.getArea());
+	console.log("넓이: " + rectangle.width); */
+	
+	//정보은닉(캡슐화) 자바: private 선언 => set, get메서드 접근
+	//             자바스크립트: 지역변수 선언 => set, get메서드 접근 
+	/* function Rectangle(w, h){
+		var width = w;//지역변수
+		var height = h;//지역변수
+		
+		this.setWidth = function(w){
+			width = w;
+		}
+		this.getWidth = function(){
+			return width;
+		}
+		this.setHeight = function(h){
+			height = h;																																																								
+		}
+		this.getHeight = function(){
+			return height;
+		}
+	}
+	
+	Rectangle.prototype.getArea = function(){
+		//return this.width * this.height;
+		return this.getWidth() * this.getHeight(); 
+	}
+		
+	var rectangle = new Rectangle(50, 70);
+	console.log("넓이: " + rectangle.getArea()); */
+	
+	//상속 : 클래스 기반 : ES6
+	class Rectangle{
+		constructor(w, h)
+		{
+			this.width = w;
+			this.height = h;
+		}
+		
+		setWidth = function(w){
+			this.width = w;
+		}
+		getWidth = function(){
+			return this.width;
+		}
+		setHeight = function(h){
+			this.height = h;																																																								
+		}
+		getHeight = function(){
+			return this.height;
+		}
+		getArea = function(){
+			return this.getWidth() * this.getHeight(); 
+		}
+	}
+	
+	class Square extends Rectangle{
+		constructor(length)
+		{
+			super(length, length);
+		}
+	}
+	
+	var square = new Square(10);
+	console.log("넓이: " + square.getArea());
+					
+						
+		
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+

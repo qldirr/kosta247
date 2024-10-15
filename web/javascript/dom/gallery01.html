@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	
+	function showPic(obj){
+		var source = obj.getAttribute("href");
+		var placeholder = document.getElementById("placeholder");
+		placeholder.setAttribute("src", source);
+		
+		var text = obj.getAttribute("title");
+		var description = document.getElementById("description");
+		
+		/* if(description.firstChild.nodeType == 3){
+			description.firstChild.nodeValue = text;
+		}	 */	
+		
+		//description.innerHTML = text;
+		//description.innerText = text;
+		description.insertAdjacentHTML("beforeend", text);
+		
+	}
+	
+	
+	
+</script>
+</head>
+<body>
+	<h1>gallery</h1>
+	<ul>
+		<li>
+			<a href="images/fireworks.jpg" title="A fireworks dispaly" 
+					onclick="showPic(this); return false;">Fireworks</a>
+		</li>
+		<li>
+			<a href="images/coffee.jpg" title="A cup of black coffee" 
+					onclick="showPic(this); return false;">Coffee</a>
+		</li>
+		<li>
+			<a href="images/rose.jpg" title="A red red rose" 
+					onclick="showPic(this); return false;">Rose</a>
+		</li>
+		<li>
+			<a href="images/bigben.jpg" title="The famous clock" 
+					onclick="showPic(this); return false;">Big Ben</a>
+		</li>
+	</ul>
+	<img id="placeholder" src="images/placeholder.gif" alt="myImage"/>
+	
+	<!-- beforebegin -->
+	<p id="description">
+	   <!-- afterbegin -->
+	   Choose an image
+	   <!-- beforeend --> 
+	</p>
+	 <!-- afterend -->
+	
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

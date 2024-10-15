@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 변수를 선언합니다.
+            var array = [
+                { name: 'Kosta', link: 'http://kosta.or.kr' },
+                { name: 'Naver', link: 'http://naver.com' },
+                { name: 'Daum', link: 'http://daum.net' }
+            ];
+            var output = "";
+            //<a href="http://naver.com">Naver</a>"
+            // $.each() 메서드를 사용합니다.
+            /* $.each(array, function(index, item){
+            	output += '<a href="' + item.link + '">'
+            	output += item.name + '</a><br>';
+            }); */
+            
+            var arr2 = $.map(array, function(item, index){
+            	if(item.name == 'Daum'){
+            		return item;
+            	}
+            });
+            
+            $.each(arr2, function(index, item){
+            	output += '<a href="' + item.link + '">'
+            	output += item.name + '</a><br>';
+            });
+            
+           $('body').html(output);
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//ECMA Script 6
+	//let, const, var => 비교분석
+	
+	//var variableA = 100;
+	//let variableB = 200;
+	//const variableC = 300;//재할당 불가
+	
+	//variableC = 400;//error
+	
+	//console.log(variableA);
+	//console.log(variableB);
+	//console.log(variableC);
+	
+	{
+		//scopeA => if, for   => function X
+		var variableA = 10;
+		let variableB = 20;
+	}
+	
+	{
+		//scopeB
+		//console.log(variableA);
+		//console.log(variableB);
+	}
+	
+	//여러 큰 스코프에서 공유하기 위한 최상위 변수에는 var을 사용
+	//작은 스코프의 로컬변수에는 let 사용
+	//기본적으로 const를 사용하고 값을 재할당애야 하는 경우 let 사용
+	
+	for(var i=0;i<10;i++){
+		var leak = "for문 안에 변수";
+	}
+	
+	console.log(leak);
+	
+	/* let x = "global";
+	
+	if(x == "global"){
+		let x = "block-scope";
+		console.log(x);
+	}
+	
+	console.log(x);
+ */
+ 
+ /* 	var x = "global";
+	
+	if(x == "global"){
+		var x = "block-scope";
+		console.log(x);
+	}
+	
+	console.log(x); */
+	
+	//문제1>
+	var greeting = 'hello';
+	greeting = "farewell";
+	
+	for(var i=0;i<2;i++){
+		var greeting = "Good morning";
+	}
+	
+	console.log(greeting);
+	
+	//1) hello  2) farewell  3) Good morning
+	
+	//문제2>
+	let value = 1;
+	
+	if(true){
+		//let value = 2;
+		console.log(value);
+	}
+	
+	value = 3;
+	
+	//1) 1  2) 2  3) 3
+	
+	//문제3>
+	let x = 100;
+	
+	if(x>50){
+		let x = 10;
+	}
+	
+	console.log(x);
+	
+	//1) 10  2)50  3) 100
+	
+	var myVar = "전역변수";
+	
+	function myFun(){
+		var myVar = "지역변수";
+		console.log("지역변수: " + myVar);
+		console.log("전역변수:"  + this.myVar);//일반함수 안에서의 this는 window객체이다.
+	}
+	
+	myFun();
+	
+	console.log(myVar);
+	
+	
+ 
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,463 @@
+RED(레드)빨강
+
+VERMILION(버밀리온) 주홍
+
+YELLOW OCHRE(옐로우 오우커)황토색
+
+PERMANENT YELLOW DEEP(퍼머넌트 옐로우 딥)진노랑 (크레파스로 따지면 개나리색일듯)
+
+LEMON YELLOW(레몬 옐로우)레몬색
+
+YELLOW GREEN(옐로우 그린)황록색
+
+VIRIDIAN(비리디안)청록색
+
+SAP GREEN(샙 그린)암록색
+
+OLIVE GREEN(올리브 그린)황록색
+
+CERULEAN BLUE(세루리안 블루)하늘색
+
+COBALT BLUE(코발트 블루)암청색
+
+ULTRAMARINE(울트라마린)군청색
+
+PRUSSIAN BLUE(프러시안 블루)감청색
+
+VIOLET(바이올렛)보라색
+
+VANDYKE BROWN(반다이크 브라운)진한갈색
+
+BROWN RED(브라운 레드)적갈색
+
+BORDEAUX(보르도)포도주색 
+
+............................................
+
+
+■ 000000 black 블랙(이색을 넣으면 배경과 같아 안보이므로 패스)
+
+■ 2f4f4f darkslategray 다크슬레이트그레이
+
+■ 708090 slategray 슬레이트그레이 
+
+■ 778899 lightslategray 라이트슬레이트그레이
+
+■ 696969 dimgray 딤그레이
+
+■ 808080 gray 그레이
+
+■ a9a9a9 darkgray 다크그레이
+
+■ c0c0c0 silver 실버
+
+■ d3d3d3 lightgrey 라이트그레이
+
+■ dcdcdc gainsboro 게인스보로
+
+■ ffffff white 화이트
+
+■ fff5ee seashell 씨쉘
+
+■ fffafa snow 스노우
+
+■ f8f8ff ghostwhite 고스트화이트
+
+■ fffaf0 floralwhite 후로랄화이트
+
+■ f5f5f5 whitesmoke 화이트스모크
+
+■ f0f8ff aliceblue 앨리스블루
+
+■ f0ffff azure 애쥬어
+
+■ fdf5e6 oldlace 올드래이스
+
+■ f5fffa mintcream 민트크림
+
+■ ffefd5 papayawhip 파파야윕
+
+■ ffdab9 peachpuff 피치퍼프
+
+■ faf0e6 linen 린넨
+
+■ eee8aa palegoldenrod 팔레골덴로드
+
+■ ffe4e1 mistyrose 미스티로즈
+
+■ ffe4b5 moccasin 모카신
+
+■ ffdead navajowhite 나바조화이트
+
+■ d2b48c tan 탄
+
+■ f5deb3 wheat 위트
+
+■ fafad2 lightgoldenrodyellow 라이트골덴로드옐로우
+
+■ ffffe0 lightyellow 라이트옐로우
+
+■ fff8dc cornsilk 콘실크(이름을 보고 실리콘이 생각난건 저뿐입니까...)
+
+■ faebd7 antiquewhite 안티크화이트(안티에 움찔 ㅋㅋ)
+
+■ f5f5dc beige 베이지
+
+■ fffacd lemonchiffon 레몬치폰 
+
+■ fffff0 ivory 아이보리
+
+■ f0e68c khaki 카키
+
+■ e6e6fa lavender 라벤더(와우 진짜 이쁘군여 자주 애용해야겠음)
+
+■ fff0f5 lavenderblush 라벤더블러시
+
+■ ffe4c4 bisque 비스크
+
+■ ffebcd blanchedalmond 블란체달몬드
+
+■ deb887 burlywood 벌리우드
+
+■ cd853f peru 페루(......음... 나라이름아닌가? ㅋㅋ 코리아 쳐서 빨간색 나오면 웃기겠다)
+
+■ 00ced1 darkturquoise 다크터콰이즈
+
+■ 00bfff deepskyblue 딥스카이블루(즈는 이게 젤 이쁩니다)
+
+■ 7fffd4 aquamarine 아쿠아마린(제가 좋아하는 보석도 아쿠아마린입니다 ㅋㅋㅋ)
+
+■ 1e90ff dodgerblue 도저블루
+
+■ d0ffff cyan 시안
+
+■ f0fff0 honeydew 허니듀(배경이 하얗다면 거의 안보여서 불편하겠군요 ㅋㅋ)
+
+■ 87cefa lightskyblue 라이트스카이블루
+
+■ afeeee paleturquoise 팔레터콰이즈
+
+■ e0ffff lightcyan 라이트시안(이것도 상당히 이쁘군녀)
+
+■ aad8e6 lightblue 라이트블루
+
+■ add8e6 lightsteelblue 라이트스틸블루
+
+■ 40e0d0 turquoise 터콰이즈
+
+■ 48d1cc mediumturquoise 미디엄터콰이즈
+
+■ 00ffff aqua 아쿠아(오호~ 이쁘네요 ㅋㅋ 하지만 눈이 몹시 아프다는거)
+
+■ 7b68ee mediumslateblue 미디움슬레이트블루
+
+■ 191970 midnightblue 미드나이트블루
+
+■ 6495ed cornflowerblue 콘플라워블루
+
+■ 0000cd mediumblue 미디움블루
+
+■ 6a5acd slateblue 슬레이트블루
+
+■ 4682b4 steelblue 스틸블루
+
+■ 0000ff blue 블루
+
+■ 483d8b darkslateblue 다크슬레이트블루
+
+■ 5f9ea0 cadetblue 카뎃블루
+
+■ 87ceeb skyblue 스카이블루
+
+■ 4169e1 royalblue 로열블루(제 옷색깔과 상당히 유사합니다)
+
+■ b0e0e6 powderblue 파우더블루
+
+■ 000080 navy 네이비(잘 보이실지는 모름 -_-)
+
+■ 00008b darkblue 다크블루
+
+■ 8a2be2 blueviolet 블루바이올렛
+
+■ 8b008b darkmagenta 다크마그네타
+
+■ 9932cc darkorchid 다크오치드
+
+■ 9400d3 darkviolet 다크바이올렛(눈 색깔이 이런색이면 이쁘겠다♡)
+
+■ f000ff magenta 마그네타(아니... 왜 이리 오타 많은지.. 이럼 곤란하다규)
+
+■ ff00ff fuchsia 퍼츠샤
+
+■ c71585 mediumvioletred 미디움바이올렛레드
+
+■ ba55d3 mediumorchid 미디움오치드
+
+■ 9370db mediumpurple 미디움퍼플
+
+■ dc143c crimson 크림슨(ㅋㅋㅋㅋㅋ 크림슨 어쩔거냐!!)
+
+■ ff1493 deeppink 딥핑크
+
+■ ffb6c1 lightpink 라이트핑크
+
+■ ff69b4 hotpink 핫핑크
+
+■ ffc0cb pink 핑크(연한게 꽤나 이쁘지만 내가 좋아하는 색이 아니므로 패스)
+
+■ dda0dd plum 플럼
+
+■ 800080 purple 퍼플
+
+■ ee82ee violet 바이올렛
+
+■ d8bfd8 thistle 디스틀
+
+■ da70d6 orchid 오치드(이름도 꽤나 멋지고 색도 이뻐서 좋군요 ㅋㅋ)
+
+■ 4b0082 indigo 인디고
+
+■ a52a2a brown 브라운
+
+■ e9967a darksalmon 다크샐몬
+
+■ f08080 lightcoral 라이트코랄
+
+■ cd5c5c indianred 인디안레드
+
+■ ffa07a lightsalmon 라이트샐몬
+
+■ db7093 palevioletred 팔레바이올렛레드
+
+■ f4a460 sandybrown 샌디브라운
+
+■ fa8072 salmon 샐몬
+
+■ ff6347 tomato 토마토
+
+■ ff4500 orangered 오렌지레드
+
+■ ff0000 red 레드
+
+■ 800000 maroon 마룬
+
+■ 8b0000 darkred 다크레드
+
+■ b22222 firebrick 파이어브릭
+
+■ d2691e chocolate 초콜렛(흐음... 초콜렛색이 원래 이랬나..)
+
+■ 8b4513 saddlebrown 새들브라운
+
+■ a0522d sienna 시에나
+
+■ cc8f8f rosybrown 로지브라운(요거요거 오타가 많아서 색이 다르게 나올수도 있습니다)
+
+■ ff7f50 coral 코랄
+
+■ ff8c00 darkorange 다크오렌지
+
+■ ffa500 orange 오렌지
+
+■ b8860b darkgoldenrod 다크골덴로드
+
+■ ffd700 gold 골드(옐로우와 별차이가...)
+
+■ eeee00 yellow 옐로우
+
+■ 7fff00 chartreuse 차트리우스
+
+■ 7cfc00 lawngreen 라운그린
+
+■ 00ff00 lime 라임(라임이라니까 에픽이 떠오릅니다 하하.)
+
+■ 32cd32 limegreen 라임그린
+
+■ 00ff7f springgreen 스프링그린(요것도 이쁘네요 ㅋㅋ)
+
+■ 3cb371 mediumseagreen 미디움씨그린
+
+■ adff2f greenyellow 그린옐로우(이쁜게 많군요.. 이런..)
+
+■ 8fbc8f darkseagreen 다크씨그린
+
+■ 0ee90 lightgreen 라이트그린(이 색 녹색계통중 가장 좋아하는 색입니다.)
+
+■ 8fb98 palegreen 팔레그린
+
+■ 9acd32 yellowgreen 옐로우그린
+
+■ 2e8b57 seagreen 씨그린
+
+■ 00fa9a mediumspringgreen 미디움스프링그린(웬지 이쁜 색입니다 ㅋㅋ)
+
+■ 20b2aa lightseagreen 라이트씨그린
+
+■ 66cdaa mediumaquamarine 미디움아쿠아마린
+
+■ 228b22 forestgreen 포레스트그린
+
+■ 008b8b darkcyan 다크시안
+
+■ 008080 teal 틸
+
+■ 006400 darkgreen 다크그린
+
+■ 556b2f darkolivegreen 다크올리브그린
+
+■ 008000 green 그린
+
+■ 808000 olive 올리브
+
+■ 6b8e23 olivedrab 올리브드래브
+
+■ bdb76b darkkhaki 다크카이
+
+■ daa520 goldenrod 골덴로드
+ 
+ 
+ 
+...........................................
+ 
+ 
+ 블로그 > 소녀에게 왕관을 ‥
+ http://blog.naver.com/juiceage/90017320183  
+2f4f4f darkslategray 어두운푸른빛회색
+708090 slategray 푸른빛회색
+778899 lightslategray 밝은푸른빛회색
+696969 dimgray 칙칙한회색
+808080 gray 회색
+a9a9a9 darkgray 어두운회색
+c0c0c0 silver 은색
+d3d3d3 lightgrey 밝은회색
+dcdcdc gainsboro
+ffffff white 백색
+fff5ee seashell 바다조가비
+fffafa snow 설백
+f8f8ff ghostwhite 허깨비백색
+fffaf0 floralwhite 꽃의백색
+f5f5f5 whitesmoke 백색연기
+f0f8ff aliceblue 엷은잿빛바탕에푸른빛
+f0ffff azure 하늘색
+fdf5e6 oldlace 낡은끈
+f5fffa mintcream 박하크림
+ffefd5 papayawhip 열대아메리카산과수매질
+ffdab9 peachpuff 복숭아빛불기
+faf0e6 linen 리넨
+eee8aa palegoldenrod 옅은국화과의다년초
+ffe4e1 mistyrose 짙은장미빛
+ffe4b5 moccasin 사슴가죽의구두
+ffdead navajowhite 나바호족백색
+d2b48c tan 볕에탄빛깔
+f5deb3 wheat 밀
+fafad2 lightgoldenrodyellow 밝은국화과다년초노랑
+ffffe0 lightyellow 밝은노랑
+fff8dc cornsilk 옥수수명주실
+faebd7 antiquewhite 옛날의백색
+f5f5dc beige 엷은갈색
+fffacd lemonchiffon 레몬빛가볍고얇은직물
+fffff0 ivory 상앗빛
+f0e68c khaki 누른빛에엷은다색이섞인빛깔
+e6e6fa lavender 연한자주색
+fff0f5 lavenderblush 연한자주빛붉기
+ffe4c4 bisque 분홍빛이도는검은빛을띤누른빛
+ffebcd blanchedalmond 희어진엷은황갈색
+deb887 burlywood 튼튼한목재
+cd853f peru 남미서부의공화국
+00ced1 darkturquoise 어두운푸른빛녹색
+00bfff deepskyblue 짙은하늘파랑
+7fffd4 aquamarine 엷은푸른빛녹색
+1e90ff dodgerblue옥수수빵파랑
+00ffff cyan 푸른정도
+f0fff0 honeydew 식물의잎에서나는단물
+87cefa lightskyblue 밝은하늘파랑
+afeeee paleturquoise 옅은푸른빛녹색
+e0ffff lightcyan 밝은푸른정도
+add8e6 lightblue 밝은파랑
+b0c4de lightsteelblue 밝은철강빛파랑
+40e0d0 turquoise 푸른빛녹색
+48d1cc mediumturquoise 중간의푸른빛녹색
+00ffff aqua 엷은푸른빛녹색
+7b68ee mediumslateblue 중푸른빛회색파랑
+191970 midnightblue 깜깜한파랑
+6495ed cornflowerblue 옥수수꽃파랑
+0000cd mediumblue 중간의파랑
+6a5acd slateblue 푸른빛회색파랑
+4682b4 steelblue 철강빛파랑
+0000ff blue 파랑
+483d8b darkslateblue 어두운푸른빛회색파랑
+5f9ea0 cadetblue 이하의파랑
+87ceeb skyblue 하늘파랑
+4169e1 royalblue 황실의파랑
+b0e0e6 powderblue 가루파랑
+000080 navy 짙은검은빛을띤남빛
+00008b darkblue 어두운파랑
+8a2be2 blueviolet 파란제비꽃색
+8b008b darkmagenta 어두운짙은분홍색
+9932cc darkorchid 어두운연보라색
+9400d3 darkviolet 어두운제비꽃색
+ff00ff magenta 짙은분홍색
+ff00ff fuchsia 붉은빛깔이나는자줏빛
+c71585 mediumvioletred 중제비꽃빨강
+ba55d3 mediumorchid 중간의연보라색
+9370db mediumpurple 중간의자줏빛
+dc143c crimson 짙게붉은색깔
+ff1493 deeppink 짙은연분홍색
+ffb6c1 lightpink 밝은연분홍색
+ff69b4 hotpink 강렬한연분홍색
+ffc0cb pink 연분홍색
+dda0dd plum 짙은 보라색
+800080 purple 자줏빛
+ee82ee violet 제비꽃색
+d8bfd8 thistle 엉겅퀴
+da70d6 orchid 연보라색
+4b0082 indigo 남색
+a52a2a brown 갈색
+e9967a darksalmon 어두운주황색
+f08080 lightcoral 밝은산호빛
+cd5c5c indianred 인디언빨강
+ffa07a lightsalmon 밝은주황색
+db7093 palevioletred 옅은제비꽃빨강
+f4a460 sandybrown 엷은갈색
+fa8072 salmon 주황색
+ff6347 tomato 토마토색
+ff0000 red 빨강
+800000 maroon 붉은빛을띤갈색
+8b0000 darkred 어두운빨강
+b22222 firebrick 내화
+d2691e chocolate 갈색
+8b4513 saddlebrown 안장갈색
+a0522d sienna 붉은빛을띤갈색
+bc8f8f rosybrown 장미빛갈색
+ff7f50 coral 산호빛
+ff8c00 darkorange 어두운붉은빛을띤누른색
+ffa500 orange 붉은빛을띤누른색
+b8860b darkgoldenrod 어둔운국화과의다년초
+ffd700 gold 금빛
+ffff00 yellow 노랑
+7fff00 chartreuse 연두색
+7cfc00 lawngreen 잔디녹색
+00ff00 lime 열대산의레몬비슷한과일
+32cd32 limegreen 라임녹색
+00ff7f springgreen 봄녹색
+3cb371 mediumseagreen 중간의바다녹색
+adff2f greenyellow 녹색의노랑
+8fbc8f darkseagreen 어두운바다녹색
+90ee90 lightgreen 밝은녹색
+98fb98 palegreen 옅은녹색
+2e8b57 seagreen 바다녹색
+00fa9a mediumspringgreen 중봄녹색
+20b2aa lightseagreen 밝은바다녹색
+66cdaa mediumaquamarine 중엷은청록색
+228b22 forestgreen 숲녹색
+008b8b darkcyan 어두운푸른정도
+008080 teal 암록색을띤청색
+006400 darkgreen 어두운녹색
+556b2f darkolivegreen 어두운올리브녹색
+008000 green 녹색
+808000 olive 물푸레나뭇과의상록교목
+6b8e23 olivedrab 올리브엷은갈색
+bdb76b darkkhaki 어두운누른빛에엷은다색
+daa520 goldenrod 국화과의다년초  
+ 
+ 

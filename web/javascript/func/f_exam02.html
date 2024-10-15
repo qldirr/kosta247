@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function sumAll(){//arguments
+		var sum = 0;
+		for(var i=0;i<arguments.length;i++){
+			sum += arguments[i];
+		}
+		return sum;
+	}
+	
+	console.log(sumAll(1,2,3,4,5,6,7,8,9,10));
+	
+	//함수 파라미터 기본값 설정
+	function calculate(total, tax=0.1, tip=0.2){
+		return total + (total * tax) + (total * tip);
+	}
+	
+	console.log(calculate(100));
+	console.log(calculate(100, 0.2));
+	console.log(calculate(100, undefined ,0.3));
+	
+	//함수형 프로그래밍
+	/* var greeting = function(name){
+		return "Hello " + name; 
+	} */
+	
+	/* var greeting = (name) => {
+		return `Hello ${name}`;
+	} */
+	
+	var greeting = name => {
+		return `Hello ${name}`;
+	}
+	
+	var greeting2 = () => {
+		return "Hello Seo";
+	}
+	
+	console.log(greeting("park"));
+	console.log(greeting2());
+	
+	
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

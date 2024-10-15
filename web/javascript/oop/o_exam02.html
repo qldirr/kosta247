@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//3. 생성자함수를 이용하여 객체를 생성 => 다수의 객체를 생성을 위해서
+	
+	function grade(kor, eng, mat){//생성자 함수(클래스 + 생성자)
+		this.kor = kor;
+		this.eng = eng;
+		this.mat = mat;
+	}
+	
+	function student(name, grade){
+		this.name = name;
+		this.grade = grade;
+		this.getSum = function(){
+			return this.grade.kor + this.grade.eng  + this.grade.mat;
+		}
+		this.getAverage = function(){
+			return this.getSum()/3;
+		}
+		this.toString = function(){
+			return this.name + "\t" + this.grade.kor + "\t" + this.grade.eng 
+				+ "\t" + this.grade.mat + "\t" + this.getSum() + "\t" + this.getAverage();
+		}
+	}
+	
+	var students = [];
+	students.push(new student("홍길동", new grade(80, 90, 70))); //생성자 함수를 호출
+	students.push(new student("박길동", new grade(40, 50, 70))); //생성자 함수를 호출
+	
+	for(var i in students){// for in : 인덱스값 리턴
+		document.write(students[i].toString() + "<br>");
+	}
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

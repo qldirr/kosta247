@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//apply, call 함수를 이용해서 함수 내에 this를 변경할 수 있다.
+	
+	var data = "Global data";
+	
+	var obj1 = {data : 'obj1 data'};
+	var obj2 = {data : 'obj2 data'};
+	
+	function func(){
+		console.log(this.data);
+	}
+
+	//func();
+	func.apply(obj1);
+	func.call(obj2);
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+

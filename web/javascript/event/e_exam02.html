@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div{
+		border: 1px solid;
+	}
+	#aa{
+		width: 300px;
+		height: 300px;
+		background: yellow;
+	}
+	
+	#bb{
+		width: 150px;
+		height: 150px;
+		margin-left: 80px;
+		margin-top: 40px;
+		background: green;
+	}
+	
+</style>
+<script type="text/javascript" src="cross.js"></script>
+<script type="text/javascript">
+	//aa클릭 => aa
+	//bb클릭 => bb
+	
+	function aProcess(){
+		alert("aa");
+	}
+	
+	function bProcess(e){
+		alert("bb");
+		
+		//이벤트버블링 방지 : event객체 필요
+		//표준브라우저 : 이벤트 핸들러함수 첫번째 파라미터를 선언
+		//구형IE : window.event
+		var event = window.event || e;
+		cross.Event.stopBubble(event);
+	}
+	
+	window.onload = function(){
+		var aa = document.getElementById("aa");
+		var bb = document.getElementById("bb");
+		
+		aa.onclick = aProcess;
+		bb.onclick = bProcess;
+	}
+		
+	
+</script>
+</head>
+<body>
+	<div id="aa">
+		aaaaaaaaaaa
+		<div id="bb">
+			bbbbbbbbb
+		</div>
+		aaaaaaaaaaa
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

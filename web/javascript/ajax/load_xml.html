@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="httpRequest.js"></script>
+<script type="text/javascript">
+	window.onload = function() {
+		sendRequest("member_xml.jsp", "", viewInfo, "GET");
+	}
+
+	function viewInfo() {
+		if (httpRequest.readyState == 4) {
+			if (httpRequest.status == 200) {
+				var docXml = httpRequest.responseXML;
+				var code = docXml.getElementsByTagName("code")[0].firstChild.nodeValue;
+				if (code == 'success') {
+						var members = docXml.getElementsByTagName("member");
+						var html = ''
+						
+						for(var i=0;i<members.length;i++){
+							var name = docXml.getElementsByTagName("name").item(i).firstChild.nodeValue;
+							var id = docXml.getElementsByTagName("id").item(i).firstChild.nodeValue;
+						
+							html += '<span>이름: ' + name + "  ID : " + id + "</span><br>";
+						}
+						
+						
+					var list = document.getElementById("list");
+					list.innerHTML = html;
+
+				} else {
+					alert('실패');
+				}
+			}
+		}
+	}
+</script>
+</head>
+<body>
+	<div id="list"></div>
+</body>
+</html>

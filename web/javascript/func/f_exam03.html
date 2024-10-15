@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	//함수의 실행 컨텍스트 영역
+	/* var var1 = 10;
+	
+	function func(){
+		var var2 = 20;//var1 => var2
+		console.log(var1);
+	}
+	
+	func(); */
+
+	/* var value = "value1";
+	
+	function printFunction(){
+		var value = "value2";
+		
+		function printValue(){
+			return value;
+		}
+		
+		console.log(printValue());		
+	}
+	
+	printFunction(); */
+	
+	/* var value = "value1"
+	
+	function printValue(){
+		return value;
+	}
+	
+	function printFunc(func){
+		var value = "value2";
+		console.log(func());
+	}
+	
+	printFunc(printValue); */
+	
+	//함수 클로저
+	//=> 함수 호출 이후에도 해당 함수의 실행컨텍스트 영역을 유지
+	
+	/* function outerFunc(){
+		var x = 10;
+		var innerFunc = function(){
+			console.log(x);
+		}
+		
+		return innerFunc;
+	}
+	
+	var inner = outerFunc();
+	inner(); */
+	
+	function outer(arg1, arg2){
+		var local = 8;
+		
+		function inner(innerArg){
+			console.log((arg1 + arg2)/(local + innerArg));
+		}		
+		
+		return inner;
+	}
+	
+	//var exam = outer(16, 14);
+	//exam(2)
+	outer(16, 14)(2);
+	
+	function factory_movie(title){
+		return{
+			get_title : function(){
+				return title;
+			},
+			set_title : function(_title){
+				title = _title;
+			}
+		}
+	}
+	
+	var movie = factory_movie('헌트');
+	console.log(movie.get_title());
+	
+	movie.set_title('비상선언');
+	console.log(movie.get_title());
+	
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

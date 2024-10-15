@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="reply.js"></script>
+<script type="text/javascript">
+
+	/* function showList(){
+		var param = "100";
+		
+		replyService.getList(param, function(data){
+			console.log("data: " + data);
+		});
+		
+		replyService.create();		
+	}
+	
+	showList();
+	
+	replyService.update(); */
+	
+	function order(){
+		orderService("커피", 1500, 5, function(result){
+			console.log("최종가격: " + result);
+		});
+	}
+	
+	function orderService(item, price, quantity, callback){
+		console.log("커피주문함");
+		var result = price * quantity;
+		callback(result);
+	}
+	
+	order();
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

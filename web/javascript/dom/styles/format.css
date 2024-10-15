@@ -1,0 +1,45 @@
+body {
+	font-family: "Malgun Gothic", sans-serif;
+	background-color: #fff;
+	color: #000;
+}
+
+TABLE {
+	margin: auto;
+	border: 1px solid #699;
+}
+
+CAPTION {
+	margin: auto;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 5px;
+}
+
+TH {
+	font-weight: normal;
+	font-style: italic;
+	border: 1px dotted #699;
+	background-color: #9cc;
+	color: #000;
+}
+
+th, td{
+	width: 120px;
+	padding: 5px;
+}
+
+.odd {
+  background-color: #ffc;
+}
+
+
+
+
+
+
+
+
+
+
+
