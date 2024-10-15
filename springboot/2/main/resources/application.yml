@@ -1,0 +1,22 @@
+server:
+  port: 8081
+
+logging:
+  level:
+   org.springframework: DEBUG
+
+spring:
+  messages:
+    basename: messages
+
+  security:
+    user:
+      name: username
+      password: 1234
+
+  jpa:
+    show-sql: true
+
+  h2:
+    console:
+      enabled: true
