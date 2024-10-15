@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="kosta.mapper.BlogMapper">
+	<cache />
+	
+	<resultMap type="Blog" id="blogResult">
+		<id property="id" column="id"/>
+		<result property="title" column="title"/>
+		<result property="content" column="content"/>
+		<association property="author" column="author_id" javaType="Author">
+			<id property="author_id" column="author_id"/>
+			<result property="name" column="name"/>
+			<result property="address" column="address"/>
+		</association>
+	</resultMap>
+	
+	
+	<select id="selectBlog" parameterType="string" resultMap="blogResult">
+		select
+		  b.id as id,
+		  b.title as title,
+		  b.content as content,
+		  a.author_id as author_id,
+		  a.name as name,
+		  a.address as address
+		from blog b, author a
+		where b.author_id = a.author_id
+		and id = #{id}	
+	</select>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

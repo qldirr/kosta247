@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="kosta.mapper.BoardMapper">
+	<cache />
+	
+	<select id="listBoard" parameterType="java.util.Map"  resultType="Board">
+		select * from board
+		<where>
+			<if test="area != null">
+				<trim prefixOverrides="OR">
+					<if test="area.length == 1">
+					    	${area[0]} LIKE #{searchKey}	
+					</if>
+					<if test="area.length == 2">
+					    	${area[0]} LIKE #{searchKey} OR	${area[1]} LIKE #{searchKey}
+					</if>
+				</trim>
+			</if>
+		</where>
+		<!-- <if test="area != null">
+			<where>			    
+				where (title LIKE %JAVA% OR writer LIKE %JAVA%)
+				<foreach collection="area" item="item" open="(" close=")" separator="OR">
+					${item} LIKE #{searchKey}
+					${item} LIKE '%' || #{searchKey} || '%'
+				</foreach>
+			</where>		
+		</if>		 -->
+		order by seq desc
+	</select>
+	
+	<select id="detailBoard" parameterType="int" resultType="Board">
+		select * from board where seq = #{seq}
+	</select>
+	
+	<insert id="insertBoard" parameterType="Board">
+		insert into board(seq, title, writer, contents, regdate, hitcount)
+			values(board_seq.nextval, #{title}, #{writer}, #{contents}, sysdate, 0)
+	</insert>
+	
+	<update id="updateBoard" parameterType="Board">
+		update board set
+			title = #{title}, contents = #{contents}
+			where seq = #{seq}
+	</update>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
