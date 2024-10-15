@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.cloudspring247.mapper.MemberMapper">
+    <select id="selectAllMembers" resultType="MemberVO">
+        SELECT * FROM MEMBERS
+    </select>
+
+    <insert id="insertMember" parameterType="MemberVO">
+        insert into members(id, name, job, home)
+            values(#{id}, #{name}, #{job}, #{home})
+    </insert>
+</mapper>

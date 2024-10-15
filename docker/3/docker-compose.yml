@@ -1,0 +1,14 @@
+version: "3"
+services:
+  oracle11g:
+    image: jaspeen/oracle-xe-11g
+    container_name: oracle11g
+    ports:
+    - 1521:1521
+    - 8080:8080
+
+  spring-boot:
+    image: dolsam77/spring247
+    build: .
+    ports:
+    - 9000:5000
